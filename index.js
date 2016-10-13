@@ -16,7 +16,7 @@ const baseUrl = {
   pathname: '/v2'
 };
 
-const credentialsFile = `${home}/.freeagent-cli.json`;
+const credentialsFile = `${home}/.freeagent.json`;
 
 getCredentials(credentialsFile, baseUrl, (error, credentials) => {
   if (error) {
@@ -27,7 +27,7 @@ getCredentials(credentialsFile, baseUrl, (error, credentials) => {
     url: process.argv[2],
     auth: { bearer: credentials.accessToken },
     headers: {
-      'User-Agent': 'freeagent-cli'
+      'User-Agent': 'Terminal'
     }
   }, (err, res, body) => {
     console.log(body);
