@@ -1,0 +1,25 @@
+{
+  "name": "freeagent-cli",
+  "description": "Simple FreeAgent CLI",
+  "version": "1.0.0",
+  "author": {
+    "name": "Csaba Palfi",
+    "url": "https://csabapalfi.github.io"
+  },
+  "bin": {
+    "freeagent-cli": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csabapalfi/freeagent-cli.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/csabapalfi/freeagent-cli/issues"
+  },
+  "homepage": "https://github.com/csabapalfi/freeagent-cli#readme",
+  "dependencies": {
+    "opn": "^4.0.2",
+    "request": "^2.75.0"
+  }
+}
