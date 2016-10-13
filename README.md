@@ -17,7 +17,7 @@ Hint: pipe results to `jq .` to get nicely formatted JSON
 `npm install -g freeagent-cli`
 
 # first time setup
-1. register and app on https://dev.freeagent.com/apps
+1. register an app on https://dev.freeagent.com/apps
 1. create a `~/.freeagent-cli.json` file:
 ```json
 {
