@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/csabapalfi/freeagent#readme",
   "dependencies": {
-    "opn": "^4.0.2",
+    "opn": "^5.2.0",
     "request": "^2.75.0"
   }
 }
