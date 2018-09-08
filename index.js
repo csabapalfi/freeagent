@@ -5,7 +5,7 @@ const request = require('request');
 
 const {
   env: { HOME: home },
-  argv: [,, path],
+  argv: [,, path, credentialsFile = `${home}/.freeagent.json`],
 } = process;
 
 const getCredentials = require('./credentials');
@@ -16,15 +16,13 @@ const baseUrl = {
   pathname: '/v2'
 };
 
-const credentialsFile = `${home}/.freeagent.json`;
-
 getCredentials(credentialsFile, baseUrl, (error, credentials) => {
   if (error) {
     return console.log(error);
   }
   request({
     baseUrl: url.format(baseUrl),
-    url: process.argv[2],
+    url: path,
     auth: { bearer: credentials.accessToken },
     headers: {
       'User-Agent': 'Terminal'
