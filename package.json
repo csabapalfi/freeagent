@@ -1,7 +1,7 @@
 {
   "name": "freeagent",
   "description": "Simple command line interface for FreeAgent",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
     "name": "Csaba Palfi",
     "url": "https://csabapalfi.github.io"
